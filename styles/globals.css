@@ -1,16 +1,222 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #ecf0f1;
+}
+
+@media screen and (min-width: 760px) {
+
+    /* * ----------------------Nabvar CSS---------------------- */
+    #navbar {
+        position: fixed;
+        background-color: #2f3640;
+        width: 200px;
+        border-right: solid #561a81 1px;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-auto-rows: minmax(10px, auto);
+    }
+
+    #navbar .logo {
+        width: 50px;
+        grid-column: 1 / 4;
+        justify-self: center;
+        margin: 20px 0 30px 0;
+        cursor: pointer;
+    }
+
+    #navbar .menu-icon {
+        width: 30px;
+        grid-column: 5 / 6;
+        justify-self: start;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    #navbar h3 {
+        grid-column: 1 / 6;
+        letter-spacing: 4px;
+        margin-left: 5px;
+        font-size: 14px;
+    }
+
+    #navbar .icons {
+        grid-column: 1 / 2;
+        width: 20px;
+        justify-self: center;
+    }
+    #navbar a {
+        grid-column: 2 / 6;
+        justify-self: start;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    #navbar a:hover {
+        color: #8c64a0;
+    }
+
+    /* * ----------------------Header CSS---------------------- */
+    #header {
+        position: fixed;
+        left: 230px;
+        top: 10px;
+        width: 80%;
+        background-color: #561a81;
+        padding: 10px 30px 10px 10px;
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    #header form {
+        grid-column: 1 / 16;
+        height: 30px;
+        display: flex;
+    }
+
+    #header form img {
+        width: 25px;
+        align-self: center;
+        margin-right: 10px;
+    }
+
+    #header form input {
+        height: 30px;
+        background-color: inherit;
+        border: none;
+        width: 100%;
+        color: #eee;
+        outline: none;
+        font-size: 14px;
+    }
+    
+    #header form input::placeholder {
+        color: #eee;
+        font-size: 14px;
+    }
+
+    #header p:nth-child(2) {
+        cursor: pointer;
+        justify-self: end;
+    }
+
+    #header p:nth-child(4) {
+        cursor: pointer;
+        justify-self: start;
+        margin-left: 5px;
+    }
+
+    #header img {
+        border-radius: 50%;
+        width: 35px;
+        justify-self: end;
+    }
+
+    /* * ----------------------Content CSS---------------------- */
+    #content {
+        padding-top: 100px;
+        background-color: #34495e;
+        padding: 10px;
+        padding-top: 70px;
+        margin-left: 200px;
+    }
+
+    #content #free-music {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    #content #free-music .head {
+        grid-column: 1 / 13;
+        grid-row: 1 / 2;
+        background-color: rgba(255, 255, 255, 0.507);
+        height: 300px;
+    }
+
+    #content #free-music .top-chart {
+        grid-column: 1 / 13;
+        grid-row: 2 / 3;
+        padding-top: 80px;
+    }
+    
+    #content #free-music .top-chart .box-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: minmax(250px, auto);
+        grid-gap: 10px;
+    }
+
+    #content #free-music .top-chart .box-container .box {
+        background-color: #561a81;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    #content #free-music h3 {
+        grid-column: 1 / 13;
+        grid-row: 2 / 3;
+        align-self: end;
+    }
+
+    #content #free-music .new-releases {
+        grid-column: 1 / 13;
+        grid-row: 3 / 4;
+        padding-top: 80px;
+    }
+    
+    #content #free-music .new-releases .box-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: minmax(250px, auto);
+        grid-gap: 10px;
+    }
+
+    #content #free-music .new-releases .box-container .box {
+        background-color: #561a81;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    #content #free-music h3 {
+        grid-column: 1 / 13;
+        grid-row: 2 / 3;
+        align-self: end;
+    }
+
+    #content #free-music .featured-artists {
+        grid-column: 1 / 13;
+        grid-row: 4 / 5;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
+    #content #free-music .featured-artists .box-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: minmax(250px, auto);
+        grid-gap: 10px;
+    }
+
+    #content #free-music .featured-artists .box-container .box {
+        background-color: #561a81;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    #content #free-music h3 {
+        grid-column: 1 / 13;
+        grid-row: 2 / 3;
+        align-self: end;
+    }
+
+    #content #free-music .foot {
+        grid-column: 1 / 13;
+        grid-row: 5 / 6;
+        background-color: rgba(255, 255, 255, 0.507);
+        height: 300px;
+    }
 }
