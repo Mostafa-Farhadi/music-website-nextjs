@@ -8,6 +8,10 @@ const Navbar = () => {
 
             <h3>BROWSER MUSIC</h3>
             <img className="icons" src="img/menu.png" alt="menu"/>
+            <Link href="/"><a>Home</a></Link>
+            <img className="icons" src="img/menu.png" alt="menu"/>
+            <Link href="/Genres"><a>Genres</a></Link>
+            <img className="icons" src="img/menu.png" alt="menu"/>
             <Link href="/FreeMusic"><a>Free Music</a></Link>
             <img className="icons" src="img/menu.png" alt="menu"/>
             <Link href="/Artist"><a>Artist</a></Link>
