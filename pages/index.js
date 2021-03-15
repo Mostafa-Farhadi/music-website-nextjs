@@ -14,7 +14,7 @@ const Home = () => {
         <meta name="keywords" content="Music"/>
       </Head>
 
-      <div className="head"></div>
+      <header className="head"></header>
 
       <TopChart
         nameOfClass = "top-chart"
@@ -34,7 +34,7 @@ const Home = () => {
         information="Select you best to listen" 
       />
 
-      <div className="foot"></div>
+      <footer className="foot"></footer>
     </div>
   );
 }

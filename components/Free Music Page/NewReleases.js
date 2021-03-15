@@ -3,7 +3,7 @@ import Music from './Music'
 const NewReleases = (props) => {
     const {nameOfClass, title, information} = props
     return ( 
-        <div className={nameOfClass}>
+        <section className={nameOfClass}>
             <h2>{title}</h2>
             <p>{information}</p>
             <hr/>
@@ -15,7 +15,7 @@ const NewReleases = (props) => {
                 <Music nameOfClass="box five">New Releases Music 5</Music>
                 <Music nameOfClass="box six">New Releases Music 6</Music>
             </div>
-        </div>
+        </section>
     );
 }
 
