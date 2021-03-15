@@ -1,8 +1,16 @@
 import MusicBox from '../components/Free Music Page/MusicBox'
+import Head from 'next/head'
 
 const Home = () => {
+
   return ( 
     <div id="homepage">
+
+      <Head>
+        <title>Music Website | Home</title>
+        <meta name="keywords" content="Music"/>
+      </Head>
+
       <div className="head"></div>
 
       <MusicBox

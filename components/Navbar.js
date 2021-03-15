@@ -15,8 +15,8 @@ const Navbar = () => {
             <Link href="/FreeMusic"><a>Free Music</a></Link>
             <img className="icons" src="img/navbar images/artist.png" alt="menu"/>
             <Link href="/Artist"><a>Artist</a></Link>
-            <img className="icons" src="img/navbar images/station.png" alt="menu"/>
-            <Link href="/Station"><a>Station</a></Link>
+            <img className="icons" src="img/navbar images/Stations.png" alt="menu"/>
+            <Link href="/Stations"><a>Stations</a></Link>
 
             <h3>YOUR MUSIC</h3>
             <img className="icons" src="img/navbar images/analytics.png" alt="menu"/>

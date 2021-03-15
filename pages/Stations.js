@@ -1,15 +1,15 @@
 import Head from 'next/head'
 
-const Analytics = () => {
+const Stations = () => {
     return ( 
         <div>
             <Head>
-                <title>Music Website | Analytics</title>
+                <title>Music Website | Stations</title>
                 <meta name="keywords" content="Music"/>
             </Head>
-            Analytics
+            Stations
         </div>
     );
 }
 
-export default Analytics;
+export default Stations;
