@@ -167,7 +167,6 @@ body, * {
                     grid-gap: 10px;
 
                     .box {
-                        background-color: #561a81;
                         border-radius: 10px;
                         margin-top: 10px;
                     }
@@ -176,14 +175,29 @@ body, * {
 
             .top-chart {
                 grid-row: 2 / 3;
+                .box-container {
+                    .box {
+                        background-color: #1a2181;
+                    }
+                }
             }
 
             .new-releases {
                 grid-row: 3 / 4;
+                .box-container {
+                    .box {
+                        background-color: #811a73;
+                    }
+                }
             }
 
             .featured-artists {
                 grid-row: 4 / 5;
+                .box-container {
+                    .box {
+                        background-color: #23811a;
+                    }
+                }
             }
 
             .foot {
