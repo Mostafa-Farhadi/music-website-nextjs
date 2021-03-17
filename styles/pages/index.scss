@@ -12,12 +12,12 @@ $bgcolor: rgba(52, 73, 94,1.0);
     }
 
     .artist {
-        grid-column: 1 / 13;
+        grid-column: 1 / 9;
         grid-row: 3 / 5;
         background-color: $bgcolor
     }
 
-    .album{
+    .album {
         grid-column: 1 / 5;
         grid-row: 5 / 9;
         background-color: $bgcolor
@@ -31,7 +31,7 @@ $bgcolor: rgba(52, 73, 94,1.0);
 
     .player {
         grid-column: 9 / 13;
-        grid-row: 5 / 9;
+        grid-row: 3 / 9;
         background-color: $bgcolor
     }
 }
