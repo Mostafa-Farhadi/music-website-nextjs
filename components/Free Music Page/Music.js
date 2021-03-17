@@ -1,8 +1,10 @@
 const Music = (props) => {
-    const {nameOfClass, children} = props
+    const {nameOfClass, imageLink, musicName, singerName} = props
     return ( 
         <div className={nameOfClass}>
-            {children}
+            <img src={imageLink} alt="music"/>
+            <h3>{musicName}</h3>
+            <p>{singerName}</p>
         </div>
     );
 }

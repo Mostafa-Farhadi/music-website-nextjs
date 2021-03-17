@@ -8,12 +8,42 @@ const NewReleases = (props) => {
             <p>{information}</p>
             <hr/>
             <div className="box-container">
-                <Music nameOfClass="box one">New Releases Music 1</Music>
-                <Music nameOfClass="box two">New Releases Music 2</Music>
-                <Music nameOfClass="box three">New Releases Music 3</Music>
-                <Music nameOfClass="box four">New Releases Music 4</Music>
-                <Music nameOfClass="box five">New Releases Music 5</Music>
-                <Music nameOfClass="box six">New Releases Music 6</Music>
+                <Music 
+                    nameOfClass="musicBox" 
+                    imageLink="/img/music cover/billie eilish.png" 
+                    musicName="Billie Eilish" 
+                    singerName="@Billie Eilish"
+                />
+                <Music 
+                    nameOfClass="musicBox" 
+                    imageLink="/img/music cover/dua lipa.png" 
+                    musicName="Dua Lipa" 
+                    singerName="@Dua Lipa"
+                />
+                <Music 
+                    nameOfClass="musicBox" 
+                    imageLink="/img/music cover/justin beiber.png" 
+                    musicName="Justin Beiber" 
+                    singerName="@Justin Beiber"
+                />
+                <Music 
+                    nameOfClass="musicBox" 
+                    imageLink="/img/music cover/pitbull.png" 
+                    musicName="Pitbull" 
+                    singerName="@Pitbull"
+                />
+                <Music 
+                    nameOfClass="musicBox" 
+                    imageLink="/img/music cover/selena gomez.png" 
+                    musicName="Selena Gomez" 
+                    singerName="@Selena Gomez"
+                />
+                <Music 
+                    nameOfClass="musicBox" 
+                    imageLink="/img/music cover/taylor swift.png" 
+                    musicName="Taylor Swift" 
+                    singerName="@Taylor Swift"
+                />
             </div>
         </section>
     );

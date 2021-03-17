@@ -8,12 +8,42 @@ const TopChart = (props) => {
             <p>{information}</p>
             <hr/>
             <div className="box-container">
-                <Music nameOfClass="box one">Top Chart Music 1</Music>
-                <Music nameOfClass="box two">Top Chart Music 2</Music>
-                <Music nameOfClass="box three">Top Chart Music 3</Music>
-                <Music nameOfClass="box four">Top Chart Music 4</Music>
-                <Music nameOfClass="box five">Top Chart Music 5</Music>
-                <Music nameOfClass="box six">Top Chart Music 6</Music>
+                <Music 
+                    nameOfClass="musicBox" 
+                    imageLink="/img/music cover/billie eilish.png" 
+                    musicName="Billie Eilish" 
+                    singerName="@Billie Eilish"
+                />
+                <Music 
+                    nameOfClass="musicBox" 
+                    imageLink="/img/music cover/dua lipa.png" 
+                    musicName="Dua Lipa" 
+                    singerName="@Dua Lipa"
+                />
+                <Music 
+                    nameOfClass="musicBox" 
+                    imageLink="/img/music cover/justin beiber.png" 
+                    musicName="Justin Beiber" 
+                    singerName="@Justin Beiber"
+                />
+                <Music 
+                    nameOfClass="musicBox" 
+                    imageLink="/img/music cover/pitbull.png" 
+                    musicName="Pitbull" 
+                    singerName="@Pitbull"
+                />
+                <Music 
+                    nameOfClass="musicBox" 
+                    imageLink="/img/music cover/selena gomez.png" 
+                    musicName="Selena Gomez" 
+                    singerName="@Selena Gomez"
+                />
+                <Music 
+                    nameOfClass="musicBox" 
+                    imageLink="/img/music cover/taylor swift.png" 
+                    musicName="Taylor Swift" 
+                    singerName="@Taylor Swift"
+                />
             </div>
         </section>
     );
