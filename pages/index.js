@@ -1,4 +1,9 @@
 import Head from 'next/head'
+import Cover from '../components/index/Cover'
+import Artist from '../components/index/Artist'
+import Album from '../components/index/Album'
+import Music from '../components/index/Music'
+import Player from '../components/index/Player'
 
 const Home = () => {
 
@@ -10,12 +15,12 @@ const Home = () => {
         <meta name="keywords" content="Music"/>
       </Head>
 
-      <section className="cover"><h2>cover</h2></section>
-      <section className="artist"><h2>artist</h2></section>
-      <section className="album"><h2>album</h2></section>
-      <section className="music"><h2>music</h2></section>
-      <section className="player"><h2>player</h2></section>
-
+      <Cover />
+      <Artist />
+      <Album />
+      <Music />
+      <Player />
+      
     </div>
   );
 }
