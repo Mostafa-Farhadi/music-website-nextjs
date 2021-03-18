@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Artist from '../components/index/Artist'
-import Album from '../components/index/Album'
-import Music from '../components/index/Music'
-import Player from '../components/index/Player'
+import Artist from '../components/index/ArtistsSection'
+import Album from '../components/index/AlbumsSection'
+import Music from '../components/index/MusicsSection'
+import Player from '../components/index/PlayerSection'
 
 const Home = () => {
 

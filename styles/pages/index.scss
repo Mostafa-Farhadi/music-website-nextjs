@@ -5,9 +5,9 @@
     grid-gap: 10px;
     background-image: url('../../public/img/cover/cover.jpg');
     
-    @import '../components/index/Artist.scss';
-    @import '../components/index/Album.scss';
-    @import '../components/index/Music.scss';
-    @import '../components/index/Player.scss';
+    @import '../components/index/ArtistsSection.scss';
+    @import '../components/index/AlbumsSection.scss';
+    @import '../components/index/MusicsSection.scss';
+    @import '../components/index/PlayerSection.scss';
 
 }
