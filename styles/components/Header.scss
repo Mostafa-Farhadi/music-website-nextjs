@@ -18,6 +18,9 @@
         justify-self: end;
         align-self: center;
         cursor: pointer;
+        background-color: #2e547a;
+        padding: 8px 2px;
+        border-radius: 10px 0 0 10px;
     }
 
     input {
@@ -25,12 +28,12 @@
         background-color: #32475c;
         height: 35px;
         align-self: center;
-        border-radius: 8px;
+        border-radius: 0 8px 8px 0;
         border: none;
         color: #eee;
         outline: none;
         font-size: 14px;
-        margin-left: 5px;
+        // margin-left: 5px;
         &::placeholder {
             color: #eee;
             font-size: 14px;
