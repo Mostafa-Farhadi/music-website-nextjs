@@ -1,11 +1,28 @@
-@mixin artists($startCol, $endCol) {
+@mixin artists($startCol, $endCol, $url) {
     grid-column-start: $startCol;
     grid-column-end: $endCol;
-    img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-image: url($url);
+    background-size: cover;
+    cursor: pointer;
+    p {
         width: 130px;
         height: 130px;
         border-radius: 50%;
+        margin: 0;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
     }
+}
+
+@mixin artistsHover($startCol, $endCol) {
+    grid-column-start: $startCol;
+    grid-column-end: $endCol;
+    background-color: red;
+    z-index: 1;
 }
 
 @mixin Animations($name, $delay) {

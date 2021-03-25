@@ -11,46 +11,46 @@
     align-items: center;
 
     .one {
-        @include artists(1, 2);
+        @include artists(1, 2, "/img/cover/billie eilish.jpg");
     }
 
     .two {
-        @include artists(2, 3);
+        @include artists(2, 3, "/img/cover/dua lipa.jpg");
     }
 
     .three {
-        @include artists(3, 4);
+        @include artists(3, 4, "/img/cover/justin beiber.jpg");
     }
 
     .four {
-        @include artists(4, 5);
+        @include artists(4, 5, "/img/cover/pitbull.jpg");
     }
 
     .five {
-        @include artists(5, 6);
+        @include artists(5, 6, "/img/cover/selena gomez.jpg");
     }
 
     .six {
-        @include artists(6, 7);
+        @include artists(6, 7, "/img/cover/taylor swift.jpg");
     }
 
     .seven {
-        @include artists(7, 8);
+        @include artists(7, 8, "/img/cover/justin timberlake.jpg");
     }
 
     .eight {
-        @include artists(8, 9);
+        @include artists(8, 9, "/img/cover/enrique iglesias.jpg");
     }
     
     .nine {
-        @include artists(9, 10);
+        @include artists(9, 10, "/img/cover/Rihanna.jpg");
     }
     
     .ten {
-        @include artists(10, 11);
+        @include artists(10, 11, "/img/cover/shakira.jpg");
     }
 
     .eleven {
-        @include artists(11, 12);
+        @include artists(11, 12, "/img/cover/bts.jpg");
     }
 }
