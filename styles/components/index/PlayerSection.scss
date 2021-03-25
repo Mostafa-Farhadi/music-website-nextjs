@@ -1,5 +1,8 @@
+@import "../../mixins.scss";
+
 .player-section {
     grid-column: 9 / 13;
     grid-row: 4 / 9;
-    background-color: $bgcolor
+    background-color: $bgcolor;
+    @include Animations(playerAnm, 1.5s);
 }

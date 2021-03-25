@@ -1,8 +1,12 @@
+@import "../mixins.scss";
+
 #header {
     grid-column: 1 / 13;
     background-color: #2c3e50;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+
+    @include Animations(headerAnm, 0s);
     
     .logo {
         grid-column: 1 / 2;

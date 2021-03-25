@@ -1,3 +1,5 @@
+@import "./mixins.scss";
+
 $bgcolor: rgba(52, 73, 94, 0.7);
 
 body {
@@ -24,5 +26,6 @@ body {
     
     @import './components/Header.scss';
     @import './pages/index.scss';
+    @include keyframes;
 
 }

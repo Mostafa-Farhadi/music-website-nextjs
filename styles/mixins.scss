@@ -1,0 +1,45 @@
+@mixin artists($startCol, $endCol) {
+    grid-column-start: $startCol;
+    grid-column-end: $endCol;
+    background: red;
+    img {
+        width: 100%;
+        height: 160px;
+    }
+    button {
+        margin: 14% 25%;
+        width: 120px;
+        height: 40px;
+    }
+}
+
+@mixin Animations($name, $delay) {
+    animation-name: $name;
+    animation-duration: 2s;
+    animation-delay: $delay;
+    animation-fill-mode: both;
+    position: relative;
+}
+
+@mixin keyframes {
+    @keyframes headerAnm {
+        0% {top: -100px;}
+        100% {top: 0;}
+    }
+    @keyframes artistAnm {
+        0% {top: -400px;}
+        100% {top: 0;}
+    }
+    @keyframes albumAnm {
+        0% {left: -500px;}
+        100% {left: 0;}
+    }
+    @keyframes musicAnm {
+        0% {bottom: -500px;}
+        100% {bottom: 0;}
+    }
+    @keyframes playerAnm {
+        0% {right: -500px;}
+        100% {right: 0;}
+    }
+}
