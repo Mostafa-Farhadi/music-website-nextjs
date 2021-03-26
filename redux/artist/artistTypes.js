@@ -1,0 +1,11 @@
+export const EILISH = 'EILISH';         // ? billie eilish
+export const LIPA = 'LIPA';             // ? dua lipa
+export const BEIBER = 'BEIBER';         // ? justin beiber
+export const PITBULL = 'PITBULL';       // ? pitbull
+export const GOMEZ = 'GOMEZ';           // ? selena gomez
+export const SWIFT = 'SWIFT';           // ? taylor swift
+export const TIBERLAKE = 'TIBERLAKE';   // ? justin timberlake
+export const IGLESIAS = 'IGLESIAS';     // ? enrique iglesias
+export const RIHANNA = 'RIHANNA';       // ? Rihanna
+export const SHAKIRA = 'SHAKIRA';       // ? shakira
+export const BTS = 'BTS';               // ? bts
