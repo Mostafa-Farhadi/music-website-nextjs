@@ -4,6 +4,7 @@
     grid-auto-rows: minmax(80px, auto);
     grid-gap: 10px;
     background-image: url('../../public/img/cover/cover.jpg');
+    overflow: hidden;
     
     @import '../components/index/ArtistsSection.scss';
     @import '../components/index/AlbumsSection.scss';
