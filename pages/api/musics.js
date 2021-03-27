@@ -5,9 +5,10 @@ export default (req, res) => {
     { 
       name: 'Billie Eilish',
       id: 1,
-      albums: {
-        album1: {
+      albums: [
+        {
           name: "Billie Eilish album 1",
+          id: 1,
           musics : [
             "Billie Eilish music 1.1",
             "Billie Eilish music 1.2",
@@ -21,8 +22,9 @@ export default (req, res) => {
             "Billie Eilish music 1.10"
           ]
         },
-        album2: {
+        {
           name: "Billie Eilish album 2",
+          id: 2,
           musics : [
             "Billie Eilish music 2.1",
             "Billie Eilish music 2.2",
@@ -36,8 +38,9 @@ export default (req, res) => {
             "Billie Eilish music 2.10"
           ]
         },
-        album3: {
+        {
           name: "Billie Eilish album 3",
+          id: 3,
           musics : [
             "Billie Eilish music 3.1",
             "Billie Eilish music 3.2",
@@ -51,8 +54,9 @@ export default (req, res) => {
             "Billie Eilish music 3.10"
           ]
         },
-        album4: {
+        {
           name: "Billie Eilish album 4",
+          id: 4,
           musics : [
             "Billie Eilish music 4.1",
             "Billie Eilish music 4.2",
@@ -66,8 +70,9 @@ export default (req, res) => {
             "Billie Eilish music 4.10"
           ]
         },
-        album5: {
+        {
           name: "Billie Eilish album 5",
+          id: 5,
           musics : [
             "Billie Eilish music 5.1",
             "Billie Eilish music 5.2",
@@ -81,14 +86,15 @@ export default (req, res) => {
             "Billie Eilish music 5.10"
           ]
         },
-      }
+      ]
     },
     { 
       name: 'Dua Lipa',
       id: 2,
-      albums: {
-        album1: {
+      albums: [
+        {
           name: "Dua Lipa album 1",
+          id: 1,
           musics : [
             "Dua Lipa music 1.1",
             "Dua Lipa music 1.2",
@@ -102,8 +108,9 @@ export default (req, res) => {
             "Dua Lipa music 1.10"
           ]
         },
-        album2: {
+        {
           name: "Dua Lipa album 2",
+          id: 2,
           musics : [
             "Dua Lipa music 2.1",
             "Dua Lipa music 2.2",
@@ -117,8 +124,9 @@ export default (req, res) => {
             "Dua Lipa music 2.10"
           ]
         },
-        album3: {
+        {
           name: "Dua Lipa album 3",
+          id: 3,
           musics : [
             "Dua Lipa music 3.1",
             "Dua Lipa music 3.2",
@@ -132,8 +140,9 @@ export default (req, res) => {
             "Dua Lipa music 3.10"
           ]
         },
-        album4: {
+        {
           name: "Dua Lipa album 4",
+          id: 4,
           musics : [
             "Dua Lipa music 4.1",
             "Dua Lipa music 4.2",
@@ -147,8 +156,9 @@ export default (req, res) => {
             "Dua Lipa music 4.10"
           ]
         },
-        album5: {
+        {
           name: "Dua Lipa album 5",
+          id: 5,
           musics : [
             "Dua Lipa music 5.1",
             "Dua Lipa music 5.2",
@@ -162,14 +172,15 @@ export default (req, res) => {
             "Dua Lipa music 5.10"
           ]
         },
-      }
+      ]
     },
     { 
       name: 'Justin Beiber',
       id: 3,
-      albums: {
-        album1: {
+      albums: [
+        {
           name: "Justin Beiber album 1",
+          id: 1,
           musics : [
             "Justin Beiber music 1.1",
             "Justin Beiber music 1.2",
@@ -183,8 +194,9 @@ export default (req, res) => {
             "Justin Beiber music 1.10"
           ]
         },
-        album2: {
+        {
           name: "Justin Beiber album 2",
+          id: 2,
           musics : [
             "Justin Beiber music 2.1",
             "Justin Beiber music 2.2",
@@ -198,8 +210,9 @@ export default (req, res) => {
             "Justin Beiber music 2.10"
           ]
         },
-        album3: {
+        {
           name: "Justin Beiber album 3",
+          id: 3,
           musics : [
             "Justin Beiber music 3.1",
             "Justin Beiber music 3.2",
@@ -213,8 +226,9 @@ export default (req, res) => {
             "Justin Beiber music 3.10"
           ]
         },
-        album4: {
+        {
           name: "Justin Beiber album 4",
+          id: 4,
           musics : [
             "Justin Beiber music 4.1",
             "Justin Beiber music 4.2",
@@ -228,8 +242,9 @@ export default (req, res) => {
             "Justin Beiber music 4.10"
           ]
         },
-        album5: {
+        {
           name: "Justin Beiber album 5",
+          id: 5,
           musics : [
             "Justin Beiber music 5.1",
             "Justin Beiber music 5.2",
@@ -243,14 +258,15 @@ export default (req, res) => {
             "Justin Beiber music 5.10"
           ]
         },
-      }
+      ]
     },
     { 
       name: 'Pitbull',
       id: 4,
-      albums: {
-        album1: {
+      albums: [
+        {
           name: "Pitbull album 1",
+          id: 1,
           musics : [
             "Pitbull music 1.1",
             "Pitbull music 1.2",
@@ -264,8 +280,9 @@ export default (req, res) => {
             "Pitbull music 1.10"
           ]
         },
-        album2: {
+        {
           name: "Pitbull album 2",
+          id: 2,
           musics : [
             "Pitbull music 2.1",
             "Pitbull music 2.2",
@@ -279,8 +296,9 @@ export default (req, res) => {
             "Pitbull music 2.10"
           ]
         },
-        album3: {
+        {
           name: "Pitbull album 3",
+          id: 3,
           musics : [
             "Pitbull music 3.1",
             "Pitbull music 3.2",
@@ -294,8 +312,9 @@ export default (req, res) => {
             "Pitbull music 3.10"
           ]
         },
-        album4: {
+        {
           name: "Pitbull album 4",
+          id: 4,
           musics : [
             "Pitbull music 4.1",
             "Pitbull music 4.2",
@@ -309,8 +328,9 @@ export default (req, res) => {
             "Pitbull music 4.10"
           ]
         },
-        album5: {
+        {
           name: "Pitbull album 5",
+          id: 5,
           musics : [
             "Pitbull music 5.1",
             "Pitbull music 5.2",
@@ -324,14 +344,15 @@ export default (req, res) => {
             "Pitbull music 5.10"
           ]
         },
-      }
+      ]
     },
     { 
       name: 'Selena Gomez',
       id: 5,
-      albums: {
-        album1: {
+      albums: [
+        {
           name: "Selena Gomez album 1",
+          id: 1,
           musics : [
             "Selena Gomez music 1.1",
             "Selena Gomez music 1.2",
@@ -345,8 +366,9 @@ export default (req, res) => {
             "Selena Gomez music 1.10"
           ]
         },
-        album2: {
+        {
           name: "Selena Gomez album 2",
+          id: 2,
           musics : [
             "Selena Gomez music 2.1",
             "Selena Gomez music 2.2",
@@ -360,8 +382,9 @@ export default (req, res) => {
             "Selena Gomez music 2.10"
           ]
         },
-        album3: {
+        {
           name: "Selena Gomez album 3",
+          id: 3,
           musics : [
             "Selena Gomez music 3.1",
             "Selena Gomez music 3.2",
@@ -375,8 +398,9 @@ export default (req, res) => {
             "Selena Gomez music 3.10"
           ]
         },
-        album4: {
+        {
           name: "Selena Gomez album 4",
+          id: 4,
           musics : [
             "Selena Gomez music 4.1",
             "Selena Gomez music 4.2",
@@ -390,8 +414,9 @@ export default (req, res) => {
             "Selena Gomez music 4.10"
           ]
         },
-        album5: {
+        {
           name: "Selena Gomez album 5",
+          id: 5,
           musics : [
             "Selena Gomez music 5.1",
             "Selena Gomez music 5.2",
@@ -405,14 +430,15 @@ export default (req, res) => {
             "Selena Gomez music 5.10"
           ]
         },
-      }
+      ]
     },
     { 
       name: 'Taylor Swift',
       id: 6,
-      albums: {
-        album1: {
+      albums: [
+        {
           name: "Taylor Swift album 1",
+          id: 1,
           musics : [
             "Taylor Swift music 1.1",
             "Taylor Swift music 1.2",
@@ -426,8 +452,9 @@ export default (req, res) => {
             "Taylor Swift music 1.10"
           ]
         },
-        album2: {
+        {
           name: "Taylor Swift album 2",
+          id: 2,
           musics : [
             "Taylor Swift music 2.1",
             "Taylor Swift music 2.2",
@@ -441,8 +468,9 @@ export default (req, res) => {
             "Taylor Swift music 2.10"
           ]
         },
-        album3: {
+        {
           name: "Taylor Swift album 3",
+          id: 3,
           musics : [
             "Taylor Swift music 3.1",
             "Taylor Swift music 3.2",
@@ -456,8 +484,9 @@ export default (req, res) => {
             "Taylor Swift music 3.10"
           ]
         },
-        album4: {
+        {
           name: "Taylor Swift album 4",
+          id: 4,
           musics : [
             "Taylor Swift music 4.1",
             "Taylor Swift music 4.2",
@@ -471,8 +500,9 @@ export default (req, res) => {
             "Taylor Swift music 4.10"
           ]
         },
-        album5: {
+        {
           name: "Taylor Swift album 5",
+          id: 5,
           musics : [
             "Taylor Swift music 5.1",
             "Taylor Swift music 5.2",
@@ -486,14 +516,15 @@ export default (req, res) => {
             "Taylor Swift music 5.10"
           ]
         },
-      }
+      ]
     },
     { 
       name: 'Justin Timberlake',
       id: 7,
-      albums: {
-        album1: {
+      albums: [
+        {
           name: "Justin Timberlke album 1",
+          id: 1,
           musics : [
             "Justin Timberlke music 1.1",
             "Justin Timberlke music 1.2",
@@ -507,8 +538,9 @@ export default (req, res) => {
             "Justin Timberlke music 1.10"
           ]
         },
-        album2: {
+        {
           name: "Justin Timberlke album 2",
+          id: 2,
           musics : [
             "Justin Timberlke music 2.1",
             "Justin Timberlke music 2.2",
@@ -522,8 +554,9 @@ export default (req, res) => {
             "Justin Timberlke music 2.10"
           ]
         },
-        album3: {
+        {
           name: "Justin Timberlke album 3",
+          id: 3,
           musics : [
             "Justin Timberlke music 3.1",
             "Justin Timberlke music 3.2",
@@ -537,8 +570,9 @@ export default (req, res) => {
             "Justin Timberlke music 3.10"
           ]
         },
-        album4: {
+        {
           name: "Justin Timberlke album 4",
+          id: 4,
           musics : [
             "Justin Timberlke music 4.1",
             "Justin Timberlke music 4.2",
@@ -552,8 +586,9 @@ export default (req, res) => {
             "Justin Timberlke music 4.10"
           ]
         },
-        album5: {
+        {
           name: "Justin Timberlke album 5",
+          id: 5,
           musics : [
             "Justin Timberlke music 5.1",
             "Justin Timberlke music 5.2",
@@ -567,14 +602,15 @@ export default (req, res) => {
             "Justin Timberlke music 5.10"
           ]
         },
-      }
+      ]
     },
     { 
       name: 'Enrique Iglesias',
       id: 8,
-      albums: {
-        album1: {
+      albums: [
+        {
           name: "Enrique Iglesias album 1",
+          id: 1,
           musics : [
             "Enrique Iglesias music 1.1",
             "Enrique Iglesias music 1.2",
@@ -588,8 +624,9 @@ export default (req, res) => {
             "Enrique Iglesias music 1.10"
           ]
         },
-        album2: {
+        {
           name: "Enrique Iglesias album 2",
+          id: 2,
           musics : [
             "Enrique Iglesias music 2.1",
             "Enrique Iglesias music 2.2",
@@ -603,8 +640,9 @@ export default (req, res) => {
             "Enrique Iglesias music 2.10"
           ]
         },
-        album3: {
+        {
           name: "Enrique Iglesias album 3",
+          id: 3,
           musics : [
             "Enrique Iglesias music 3.1",
             "Enrique Iglesias music 3.2",
@@ -618,8 +656,9 @@ export default (req, res) => {
             "Enrique Iglesias music 3.10"
           ]
         },
-        album4: {
+        {
           name: "Enrique Iglesias album 4",
+          id: 4,
           musics : [
             "Enrique Iglesias music 4.1",
             "Enrique Iglesias music 4.2",
@@ -633,8 +672,9 @@ export default (req, res) => {
             "Enrique Iglesias music 4.10"
           ]
         },
-        album5: {
+        {
           name: "Enrique Iglesias album 5",
+          id: 5,
           musics : [
             "Enrique Iglesias music 5.1",
             "Enrique Iglesias music 5.2",
@@ -648,14 +688,15 @@ export default (req, res) => {
             "Enrique Iglesias music 5.10"
           ]
         },
-      }
+      ]
     },
     { 
       name: 'Rihanna Albumes',
       id: 9,
-      albums: {
-        album1: {
+      albums: [
+        {
           name: "Rihana album 1",
+          id: 1,
           musics : [
             "Rihana music 1.1",
             "Rihana music 1.2",
@@ -669,8 +710,9 @@ export default (req, res) => {
             "Rihana music 1.10"
           ]
         },
-        album2: {
+        {
           name: "Rihana album 2",
+          id: 2,
           musics : [
             "Rihana music 2.1",
             "Rihana music 2.2",
@@ -684,8 +726,9 @@ export default (req, res) => {
             "Rihana music 2.10"
           ]
         },
-        album3: {
+        {
           name: "Rihana album 3",
+          id: 3,
           musics : [
             "Rihana music 3.1",
             "Rihana music 3.2",
@@ -699,8 +742,9 @@ export default (req, res) => {
             "Rihana music 3.10"
           ]
         },
-        album4: {
+        {
           name: "Rihana album 4",
+          id: 4,
           musics : [
             "Rihana music 4.1",
             "Rihana music 4.2",
@@ -714,8 +758,9 @@ export default (req, res) => {
             "Rihana music 4.10"
           ]
         },
-        album5: {
+        {
           name: "Rihana album 5",
+          id: 5,
           musics : [
             "Rihana music 5.1",
             "Rihana music 5.2",
@@ -729,14 +774,15 @@ export default (req, res) => {
             "Rihana music 5.10"
           ]
         },
-      }
+      ]
     },
     { 
       name: 'Shakira Albumes',
       id: 10,
-      albums: {
-        album1: {
+      albums: [
+        {
           name: "Shakira album 1",
+          id: 1,
           musics : [
             "Shakira music 1.1",
             "Shakira music 1.2",
@@ -750,8 +796,9 @@ export default (req, res) => {
             "Shakira music 1.10"
           ]
         },
-        album2: {
+        {
           name: "Shakira album 2",
+          id: 2,
           musics : [
             "Shakira music 2.1",
             "Shakira music 2.2",
@@ -765,8 +812,9 @@ export default (req, res) => {
             "Shakira music 2.10"
           ]
         },
-        album3: {
+        {
           name: "Shakira album 3",
+          id: 3,
           musics : [
             "Shakira music 3.1",
             "Shakira music 3.2",
@@ -780,8 +828,9 @@ export default (req, res) => {
             "Shakira music 3.10"
           ]
         },
-        album4: {
+        {
           name: "Shakira album 4",
+          id: 4,
           musics : [
             "Shakira music 4.1",
             "Shakira music 4.2",
@@ -795,8 +844,9 @@ export default (req, res) => {
             "Shakira music 4.10"
           ]
         },
-        album5: {
+        {
           name: "Shakira album 5",
+          id: 5,
           musics : [
             "Shakira music 5.1",
             "Shakira music 5.2",
@@ -810,14 +860,15 @@ export default (req, res) => {
             "Shakira music 5.10"
           ]
         },
-      }
+      ]
     },
     { 
       name: 'Bts',
       id: 11,
-      albums: {
-        album1: {
+      albums: [
+        {
           name: "Bts album 1",
+          id: 1,
           musics : [
             "Bts music 1.1",
             "Bts music 1.2",
@@ -831,8 +882,9 @@ export default (req, res) => {
             "Bts music 1.10"
           ]
         },
-        album2: {
+        {
           name: "Bts album 2",
+          id: 2,
           musics : [
             "Bts music 2.1",
             "Bts music 2.2",
@@ -846,8 +898,9 @@ export default (req, res) => {
             "Bts music 2.10"
           ]
         },
-        album3: {
+        {
           name: "Bts album 3",
+          id: 3,
           musics : [
             "Bts music 3.1",
             "Bts music 3.2",
@@ -861,8 +914,9 @@ export default (req, res) => {
             "Bts music 3.10"
           ]
         },
-        album4: {
+        {
           name: "Bts album 4",
+          id: 4,
           musics : [
             "Bts music 4.1",
             "Bts music 4.2",
@@ -876,8 +930,9 @@ export default (req, res) => {
             "Bts music 4.10"
           ]
         },
-        album5: {
+        {
           name: "Bts album 5",
+          id: 5,
           musics : [
             "Bts music 5.1",
             "Bts music 5.2",
@@ -891,7 +946,7 @@ export default (req, res) => {
             "Bts music 5.10"
           ]
         },
-      }
+      ]
     }
   ])
 }
