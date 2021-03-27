@@ -12,42 +12,54 @@ import { BTS } from './artistTypes';
 
 
 const initialState = {
+    loading: true,
     albumesName: "Albumes Section"
 }
 
 const artistReducer = (state = initialState, action) => {
     switch (action.type) {
         case EILISH: return {
+            loading: false,
             albumesName: action.payload
         }
         case LIPA: return {
+            loading: false,
             albumesName: action.payload
         }
         case BEIBER: return {
+            loading: false,
             albumesName: action.payload
         }
         case PITBULL: return {
+            loading: false,
             albumesName: action.payload
         }
         case GOMEZ: return {
+            loading: false,
             albumesName: action.payload
         }
         case SWIFT: return {
+            loading: false,
             albumesName: action.payload
         }
         case TIBERLAKE: return {
+            loading: false,
             albumesName: action.payload
         }
         case IGLESIAS: return {
+            loading: false,
             albumesName: action.payload
         }
         case RIHANNA: return {
+            loading: false,
             albumesName: action.payload
         }
         case SHAKIRA: return {
+            loading: false,
             albumesName: action.payload
         }
         case BTS: return {
+            loading: false,
             albumesName: action.payload
         }
 
