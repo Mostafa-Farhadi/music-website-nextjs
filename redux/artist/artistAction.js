@@ -1,122 +1,56 @@
 import axios from 'axios';
-import { EILISH } from './artistTypes';
-import { LIPA } from './artistTypes';
-import { BEIBER } from './artistTypes';
-import { PITBULL } from './artistTypes';
-import { GOMEZ } from './artistTypes';
-import { SWIFT } from './artistTypes';
-import { TIBERLAKE } from './artistTypes';
-import { IGLESIAS } from './artistTypes';
-import { RIHANNA } from './artistTypes';
-import { SHAKIRA } from './artistTypes';
-import { BTS } from './artistTypes';
 
-export const eilishArtist = (name) => {
-    return {
-        type: EILISH,
-        payload: name[0]
-    }
-}
+import { FETCH_ARTIST_REQUEST } from './artistTypes';
+import { FETCH_ARTIST_SUCCESS } from './artistTypes';
+import { FETCH_ARTIST_FAILURE } from './artistTypes';
 
-export const lipaArtist = (name) => {
-    return {
-        type: LIPA,
-        payload: name[1]
-    }
-}
+const fetchCityRequest = () => ({
+        type: FETCH_ARTIST_REQUEST
+    })
 
-export const beiberArtist = (name) => {
-    return {
-        type: BEIBER,
-        payload: name[2]
-    }
-}
+const fetchCitySeuccess = artistName => ({
+        type: FETCH_ARTIST_SUCCESS,
+        payload: artistName
+    })
 
-export const pitbullArtist = (name) => {
-    return {
-        type: PITBULL,
-        payload: name[3]
-    }
-}
-
-export const gomezArtist = (name) => {
-    return {
-        type: GOMEZ,
-        payload: name[4]
-    }
-}
-
-export const swiftArtist = (name) => {
-    return {
-        type: SWIFT,
-        payload: name[5]
-    }
-}
-
-export const timberlakeArtist = (name) => {
-    return {
-        type: TIBERLAKE,
-        payload: name[6]
-    }
-}
-
-export const iglesiasArtist = (name) => {
-    return {
-        type: IGLESIAS,
-        payload: name[7]
-    }
-}
-
-export const rihannaArtist = (name) => {
-    return {
-        type: RIHANNA,
-        payload: name[8]
-    }
-}
-
-export const shakiraArtist = (name) => {
-    return {
-        type: SHAKIRA,
-        payload: name[9]
-    }
-}
-
-export const btsArtist = (name) => {
-    return {
-        type: BTS,
-        payload: name[10]
-    }
-}
+const fetchCityFailure = error => ({
+    type: FETCH_ARTIST_FAILURE,
+    error: error
+})
 
 export const choseArtist = (Artist) => {
     return (dispatch) => {
+        dispatch(fetchCityRequest())
         axios.get("http://localhost:3000/api/musics")
         .then((response) => {
             const artist = response.data
             if (Artist === "Eilish") {
-                dispatch(eilishArtist(artist))
+                dispatch(fetchCitySeuccess(artist[0]))
             } else if (Artist === "Lipa") {
-                dispatch(lipaArtist(artist))
+                dispatch(fetchCitySeuccess(artist[1]))
             } else if (Artist === "Beiber") {
-                dispatch(beiberArtist(artist))
+                dispatch(fetchCitySeuccess(artist[2]))
             } else if (Artist === "Pitbull") {
-                dispatch(pitbullArtist(artist))
+                dispatch(fetchCitySeuccess(artist[3]))
             } else if (Artist === "Gomez") {
-                dispatch(gomezArtist(artist))
+                dispatch(fetchCitySeuccess(artist[4]))
             } else if (Artist === "Swift") {
-                dispatch(swiftArtist(artist))
+                dispatch(fetchCitySeuccess(artist[5]))
             } else if (Artist === "Timberlake") {
-                dispatch(timberlakeArtist(artist))
+                dispatch(fetchCitySeuccess(artist[6]))
             } else if (Artist === "Iglesias") {
-                dispatch(iglesiasArtist(artist))
+                dispatch(fetchCitySeuccess(artist[7]))
             } else if (Artist === "Rihanna") {
-                dispatch(rihannaArtist(artist))
+                dispatch(fetchCitySeuccess(artist[8]))
             } else if (Artist === "Shakira") {
-                dispatch(shakiraArtist(artist))
+                dispatch(fetchCitySeuccess(artist[9]))
             } else if (Artist === "Bts") {
-                dispatch(btsArtist(artist))
+                dispatch(fetchCitySeuccess(artist[10]))
             }
-
+            
+        }).catch((error) => {
+            const errorMessage = error.message
+            dispatch(fetchCityFailure(errorMessage))
         });
     }
 }
