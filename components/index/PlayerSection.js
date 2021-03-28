@@ -14,12 +14,17 @@ const PlayerSection = (props) => {
                         <div className="rect3"></div>
                     </div>
                 ) : (
-                    <h1>{Music.music.name}</h1>
+                    <div className="music" >
+                        <img src={`img/cover/${Music.music.picture}.jpg`} alt="" 
+                        style={{borderColor: `rgb(${Math.random() * 250},${Math.random() * 250},${Math.random() * 250})`}} />
+                        <h3>{Music.music.name}</h3>
+                    </div>
                 )
             }
         </section>
     );
 }
+
 
 const mapStateToProps = state => {
     return {
