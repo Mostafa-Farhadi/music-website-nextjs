@@ -3,7 +3,6 @@
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: minmax(80px, auto);
     grid-gap: 10px;
-    background-image: url('../../public/img/cover/cover.jpg');
     overflow: hidden;
     
     @import '../components/index/ArtistsSection.scss';
