@@ -6,17 +6,17 @@ const AlbumsSection = (props) => {
         <section className="albums-section">
             {
                 Artist.loading ? (
-                    <div class="Loader">
-                        <div class="rect1"></div>
-                        <div class="rect2"></div>
-                        <div class="rect3"></div>
+                    <div className="Loader">
+                        <div className="rect1"></div>
+                        <div className="rect2"></div>
+                        <div className="rect3"></div>
                     </div>
                 ) : (
                     <ul>
                         <h2>{Artist.artist.name}</h2>
                         {Artist.artist.albums.map(album => {
                             return (
-                                <li key={Artist.id}>{album.name}</li>
+                                <li key={album.id} >{album.name}</li>
                             )
                         })}
                     </ul>
@@ -32,4 +32,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(AlbumsSection);
+export default connect(mapStateToProps, null)(AlbumsSection);
