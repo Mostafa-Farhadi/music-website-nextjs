@@ -1,9 +1,7 @@
-@mixin artists($startCol, $endCol, $url) {
-    grid-column-start: $startCol;
-    grid-column-end: $endCol;
-    width: 130px;
+@mixin artists($url) {
     height: 130px;
     border-radius: 50%;
+    margin-right: 10px;
     background-image: url($url);
     background-size: cover;
     cursor: pointer;
