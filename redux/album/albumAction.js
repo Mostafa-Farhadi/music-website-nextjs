@@ -5,13 +5,13 @@ import { FETCH_ALBUM_SUCCESS } from './albumTypes';
 import { FETCH_ALBUM_FAILURE } from './albumTypes';
 
 const fetchAlbumRequest = () => ({
-        type: FETCH_ALBUM_REQUEST
-    })
+    type: FETCH_ALBUM_REQUEST
+})
 
-const fetchAlbumSeuccess = album => ({
-        type: FETCH_ALBUM_SUCCESS,
-        payload: album
-    })
+const fetchAlbumSuccess = album => ({
+    type: FETCH_ALBUM_SUCCESS,
+    payload: album
+})
 
 const fetchAlbumFailure = error => ({
     type: FETCH_ALBUM_FAILURE,
@@ -25,7 +25,7 @@ export const choseAlbum = (artistId, AlbumId) => {
             axios.get("http://localhost:3000/api/musics")
         .then((response) => {
             const artist = response.data
-                dispatch(fetchAlbumSeuccess(artist[artistId].albums[AlbumId]))
+                dispatch(fetchAlbumSuccess(artist[artistId].albums[AlbumId]))
         }).catch((error) => {
             const errorMessage = error.message
             dispatch(fetchAlbumFailure(errorMessage))

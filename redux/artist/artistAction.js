@@ -5,13 +5,13 @@ import { FETCH_ARTIST_SUCCESS } from './artistTypes';
 import { FETCH_ARTIST_FAILURE } from './artistTypes';
 
 const fetchArtistRequest = () => ({
-        type: FETCH_ARTIST_REQUEST
-    })
+    type: FETCH_ARTIST_REQUEST
+})
 
-const fetchArtistSeuccess = artist => ({
-        type: FETCH_ARTIST_SUCCESS,
-        payload: artist
-    })
+const fetchArtistSuccess = artist => ({
+    type: FETCH_ARTIST_SUCCESS,
+    payload: artist
+})
 
 const fetchArtistFailure = error => ({
     type: FETCH_ARTIST_FAILURE,
@@ -25,7 +25,7 @@ export const choseArtist = (artistId) => {
             axios.get("http://localhost:3000/api/musics")
         .then((response) => {
             const artist = response.data
-                dispatch(fetchArtistSeuccess(artist[artistId]))
+                dispatch(fetchArtistSuccess(artist[artistId]))
         }).catch((error) => {
             const errorMessage = error.message
             dispatch(fetchArtistFailure(errorMessage))
