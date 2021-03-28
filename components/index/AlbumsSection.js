@@ -1,7 +1,8 @@
 import { connect } from "react-redux";
+import {choseAlbum} from '../../redux/album/albumAction'
 
 const AlbumsSection = (props) => {
-    const { Artist } = props
+    const { Artist, choseAlbum } = props
     return ( 
         <section className="albums-section">
             {
@@ -16,7 +17,7 @@ const AlbumsSection = (props) => {
                         <h2>{Artist.artist.name}</h2>
                         {Artist.artist.albums.map(album => {
                             return (
-                                <li key={album.id} >{album.name}</li>
+                                <li key={album.id} onClick={() => choseAlbum(Artist.artist.id, album.id)} >{album.name}</li>
                             )
                         })}
                     </ul>
@@ -32,4 +33,10 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps, null)(AlbumsSection);
+const mapDispatchToProps = dispatch => {
+    return {
+        choseAlbum: (ArtistId, AlbumId) => dispatch(choseAlbum(ArtistId, AlbumId))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(AlbumsSection);
