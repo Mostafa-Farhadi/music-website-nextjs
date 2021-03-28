@@ -5,7 +5,7 @@ import { FETCH_ARTIST_FAILURE } from './artistTypes';
 
 const initialState = {
     loading: true,
-    albumesName: '',
+    artist: '',
     error: ''
 }
 
@@ -18,7 +18,7 @@ const artistReducer = (state = initialState, action) => {
         case FETCH_ARTIST_SUCCESS: return {
             ...state,
             loading: false,
-            albumesName: action.payload
+            artist: action.payload
         }
         case FETCH_ARTIST_FAILURE: return {
             ...state,

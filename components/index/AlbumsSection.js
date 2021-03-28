@@ -12,8 +12,8 @@ const AlbumsSection = (props) => {
                     </div>
                 ) : (
                     <ul>
-                        <h2>{props.albums.albumesName.name}</h2>
-                        {props.albums.albumesName.albums.map(album => {
+                        <h2>{props.albums.artist.name}</h2>
+                        {props.albums.artist.albums.map(album => {
                             return (
                                 <li key={album.id}>{album.name}</li>
                             )
@@ -27,7 +27,7 @@ const AlbumsSection = (props) => {
 
 const mapStateToProps = state => {
     return {
-        albums: state.artist
+        albums: state.albums
     }
 }
 

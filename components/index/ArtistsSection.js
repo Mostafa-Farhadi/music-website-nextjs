@@ -23,7 +23,7 @@ const ArtistsSection = (props) => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        choseArtist: (Artist) => dispatch(choseArtist(Artist)),
+        choseArtist: (artist) => dispatch(choseArtist(artist)),
         
     }
 }

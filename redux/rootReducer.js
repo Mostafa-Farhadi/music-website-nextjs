@@ -2,7 +2,7 @@ import { combineReducers } from "redux";
 import artistReducer from './artist/artistReducer'
 
 const rootReducer = combineReducers ({
-    artist: artistReducer
+    albums: artistReducer
 })
 
 export default rootReducer;
