@@ -18,14 +18,14 @@ const fetchArtistFailure = error => ({
     error: error
 })
 
-export const choseArtist = (ID) => {
+export const choseArtist = (artistId) => {
     return (dispatch) => {
         dispatch(fetchArtistRequest())
         setTimeout(() => {
             axios.get("http://localhost:3000/api/musics")
         .then((response) => {
             const artist = response.data
-                dispatch(fetchArtistSeuccess(artist[ID]))
+                dispatch(fetchArtistSeuccess(artist[artistId]))
         }).catch((error) => {
             const errorMessage = error.message
             dispatch(fetchArtistFailure(errorMessage))
