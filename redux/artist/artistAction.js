@@ -21,7 +21,8 @@ const fetchCityFailure = error => ({
 export const choseArtist = (Artist) => {
     return (dispatch) => {
         dispatch(fetchCityRequest())
-        axios.get("http://localhost:3000/api/musics")
+        setTimeout(() => {
+            axios.get("http://localhost:3000/api/musics")
         .then((response) => {
             const artist = response.data
             if (Artist === "Eilish") {
@@ -52,5 +53,6 @@ export const choseArtist = (Artist) => {
             const errorMessage = error.message
             dispatch(fetchCityFailure(errorMessage))
         });
+        }, 700);
     }
 }
