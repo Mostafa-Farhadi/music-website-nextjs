@@ -1,7 +1,9 @@
 import { connect } from "react-redux";
+import { choseMusic } from "../../redux/musicPlayer/musicAction";
 
 const MusicsSection = (props) => {
-    const { Album } = props
+    const { Album, choseMusic } = props
+
     return ( 
         <section className="musics-section">
             {
@@ -16,7 +18,7 @@ const MusicsSection = (props) => {
                         <h2>{Album.album.name}</h2>
                         {Album.album.musics.map(music => {
                             return (
-                                <li key={music.id} >{music.name}</li>
+                                <li key={music.id} onClick={() => choseMusic(music)} >{music.name}</li>
                             )
                         })}
                     </ul>
@@ -32,4 +34,10 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps, null)(MusicsSection);
+const mapDispatchToProps = dispatch => {
+    return {
+        choseMusic: (music) => dispatch(choseMusic(music))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(MusicsSection);

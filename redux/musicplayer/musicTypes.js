@@ -1,0 +1,2 @@
+export const MUSIC_REQUEST = "MUSIC_REQUEST";
+export const MUSIC_SUCCESS = "MUSIC_SUCCESS";
