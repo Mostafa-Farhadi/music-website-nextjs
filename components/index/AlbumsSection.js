@@ -5,13 +5,10 @@ const AlbumsSection = (props) => {
         <section className="albums-section">
             {
                 props.albums.loading ? (
-                    <div class="loader">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="circle"></div>
-                        <div class="shadow"></div>
-                        <div class="shadow"></div>
-                        <div class="shadow"></div>
+                    <div class="Loader">
+                        <div class="rect1"></div>
+                        <div class="rect2"></div>
+                        <div class="rect3"></div>
                     </div>
                 ) : (
                     <ul>
