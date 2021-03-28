@@ -103,14 +103,16 @@
         padding: 0 10px 0 10px;
         margin: 0;
         li {
-            padding: 10px;
+            padding: 10px 20px;
             margin: 10px 0;
-            border: dashed 1.5px;
             cursor: pointer;
             background-color: rgba(0, 0, 0, 0.4);
-            color: #6b566e;
+            color: #03a08b;
             &:hover {
-                color: #cf8f8f;
+                color: #98e7de;
+                border-left: #98e7de solid 3px;
+                border-radius: 2px 0 0 2px;
+                padding-left: 17px;
             }
         }
     }
