@@ -1,10 +1,11 @@
 import { connect } from "react-redux";
 
 const AlbumsSection = (props) => {
+    const { Artist } = props
     return ( 
         <section className="albums-section">
             {
-                props.albums.loading ? (
+                Artist.loading ? (
                     <div class="Loader">
                         <div class="rect1"></div>
                         <div class="rect2"></div>
@@ -12,10 +13,10 @@ const AlbumsSection = (props) => {
                     </div>
                 ) : (
                     <ul>
-                        <h2>{props.albums.artist.name}</h2>
-                        {props.albums.artist.albums.map(album => {
+                        <h2>{Artist.artist.name}</h2>
+                        {Artist.artist.albums.map(album => {
                             return (
-                                <li key={album.id}>{album.name}</li>
+                                <li key={Artist.id}>{album.name}</li>
                             )
                         })}
                     </ul>
@@ -27,8 +28,8 @@ const AlbumsSection = (props) => {
 
 const mapStateToProps = state => {
     return {
-        albums: state.albums
+        Artist: state.Artist
     }
 }
 
-export default connect(mapStateToProps, null)(AlbumsSection);
+export default connect(mapStateToProps, mapDispatchToProps)(AlbumsSection);
