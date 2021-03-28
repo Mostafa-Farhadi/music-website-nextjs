@@ -16,7 +16,7 @@ const MusicsSection = (props) => {
                         <h2>{Album.album.name}</h2>
                         {Album.album.musics.map(music => {
                             return (
-                                <li key={music.id} >{music}</li>
+                                <li key={music.id} >{music.name}</li>
                             )
                         })}
                     </ul>
