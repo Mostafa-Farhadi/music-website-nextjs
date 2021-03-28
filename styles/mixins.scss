@@ -71,7 +71,7 @@
     }
 
     .Loader > div {
-        background-color: rgb(255, 0, 191);;
+        background-color: rgb(255, 0, 191);
         height: 100%;
         width: 2px;
         border-radius: 20%;
@@ -93,6 +93,25 @@
             transform: scaleY(0.4);
         }  20% { 
             transform: scaleY(1.0);
+        }
+    }
+}
+
+@mixin list {
+    ul {
+        list-style-type: none;
+        padding: 0 10px 0 10px;
+        margin: 0;
+        li {
+            padding: 10px;
+            margin: 10px 0;
+            border: dashed 1.5px;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #6b566e;
+            &:hover {
+                color: #cf8f8f;
+            }
         }
     }
 }

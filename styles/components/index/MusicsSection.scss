@@ -5,4 +5,8 @@
     grid-row: 4 / 9;
     background-color: $bgcolor;
     @include Animations(musicAnm, 1.5s);
+
+    @include list;
+
+    @include Loader;
 }

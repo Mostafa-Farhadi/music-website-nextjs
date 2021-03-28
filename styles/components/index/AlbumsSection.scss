@@ -6,21 +6,7 @@
     background-color: $bgcolor;
     @include Animations(albumAnm, 1.5s);
 
-    ul {
-        list-style-type: none;
-        padding: 0 10px 0 10px;
-        margin: 0;
-        li {
-            padding: 10px;
-            margin: 10px 0;
-            border: dashed 1px;
-            cursor: pointer;
-            color: #c5c5c5;
-            &:hover {
-                color: #5a5a5a;
-            }
-        }
-    }
+    @include list;
 
     @include Loader;
 }
