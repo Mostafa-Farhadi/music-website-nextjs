@@ -17,7 +17,7 @@ const PlayerSection = (props) => {
                     </div>
                 ) : (
                     <div className="music" >
-                        <img src={`img/cover/${Music.music.picture}.jpg`} alt="" 
+                        <img src={`img/cover/${Music.music.picture}.jpg`} alt="artist image" 
                             style={{borderColor: `rgb(${Math.random() * 250},${Math.random() * 250},${Math.random() * 250})`}} />
                         <h3>{Music.music.name}</h3>
                         <div className="play-box" >
