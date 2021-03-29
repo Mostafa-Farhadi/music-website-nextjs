@@ -1,6 +1,5 @@
 @import "../../mixins.scss";
 
-
 .player-section {
     grid-column: 9 / 13;
     grid-row: 4 / 9;
@@ -19,6 +18,19 @@
             margin-top: 25px;
             border: solid 4px;
             border-radius: 50px;
+        }
+
+        .play-box {
+            display: flex;
+            width: 180px;
+            justify-content: space-between;
+        }
+
+        .play, .pause {
+            width: 80px;
+            height: 40px;
+            border-radius: 50px;
+            outline: none;
         }
     }
 
