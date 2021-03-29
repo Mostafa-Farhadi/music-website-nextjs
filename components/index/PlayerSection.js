@@ -1,10 +1,20 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { connect } from "react-redux";
 
 const PlayerSection = (props) => {
     const { Music } = props
     const audioEl = useRef(null)
+    const [isPauseActive, setIsPauseActive] = useState(false)
+    const [isPlayeActive, setIsPlayeActive] = useState(false)
 
+    const playHandler = () => {
+        audioEl.current.play();
+        setIsPauseActive(!isPauseActive);
+    }
+    const pauseHandler = () => {
+        audioEl.current.pause();
+        setIsPlayeActive(!isPlayeActive);
+    }
 
     return ( 
         <section className="player-section">
@@ -22,8 +32,8 @@ const PlayerSection = (props) => {
                         <h3>{Music.music.name}</h3>
                         <div className="play-box" >
                             <audio src={`music/${Music.music.picture}.mp3`} ref={audioEl}> </audio>
-                            <button className="play" onClick={() => audioEl.current.play()} >Play</button>
-                            <button className="pause" onClick={() => audioEl.current.pause()} >Pause</button>
+                            <button className={`button ${isPauseActive ? "play" : "playActive"}`} onClick={playHandler} ></button>
+                            <button className={`button ${isPlayeActive ? "pause" : "pauseActive"}`} onClick={pauseHandler} ></button>
                         </div>
                     </div>
                 )
