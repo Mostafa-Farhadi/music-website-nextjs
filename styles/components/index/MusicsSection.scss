@@ -11,4 +11,6 @@
     h2 {
         color: #a52a2a;
     }
+    overflow-y: auto;
+    @include scroll;
 }
