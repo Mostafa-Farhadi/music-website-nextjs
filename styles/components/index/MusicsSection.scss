@@ -2,11 +2,11 @@
 
 .musics-section {
     grid-column: 5 / 9;
-    grid-row: 4 / 9;
-    background-color: $bgcolor;
+    grid-row: 3 / 9;
     @include Animations(musicAnm, 1.5s);
-
     @include list;
-
     @include Loader;
+    h2 {
+        color: #a52a2a;
+    }
 }
