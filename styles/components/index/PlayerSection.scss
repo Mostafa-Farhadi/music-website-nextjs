@@ -2,59 +2,68 @@
 
 .player-section {
     grid-column: 9 / 13;
-    grid-row: 4 / 9;
-    background-color: $bgcolor;
+    grid-row: 3 / 9;
     @include Animations(playerAnm, 1.5s);
     @include Loader;
     
     .music {
-        width: 100%;
+        width: 95%;
         height: 100%;
+        margin-top: 18px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        box-shadow: -5px -5px 5px #ffffff73, 7px 7px 5px rgba(94, 104, 121, 0.288);
         img {
-            width: 200px;
+            width: 180px;
             margin-top: 25px;
-            border: solid 4px;
-            border-radius: 50px;
+            border-radius: 50%;
+            box-shadow: -5px -5px 5px #ffffff73, 7px 7px 5px rgba(94, 104, 121, 0.288);
+            padding: 10px;
+        }
+
+        .song-name {
+            margin-top: 50px;
+            color: #a52a2a;
         }
 
         .play-box {
             display: flex;
-            width: 130px;
+            width: 220px;
             justify-content: space-between;
         }
 
         .button {
-            width: 50px;
-            height: 50px;
+            width: 100px;
+            height: 40px;
             outline: none;
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
             cursor: pointer;
-            border-radius: 50%;
+            border-radius: 10px;
             border: none;
+            margin-top: 50px;
         }
 
         .play {
             background-image: url("../../../public/img/icon/play.png");
-            background-color: red;
-            
+            box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
         }
         .playActive {
-            background-image: url("../../../public/img/icon/play.png");
-            background-color: blue;
+            background-image: url("../../../public/img/icon/play-active.png");
+            box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+
         }
 
         .pause {
             background-image: url("../../../public/img/icon/pause.png");
-            background-color: green;
+            box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.288);
         }
         .pauseActive {
-            background-image: url("../../../public/img/icon/pause.png");
-            background-color: brown;
+            background-image: url("../../../public/img/icon/pause-active.png");
+            box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
+
         }
     }
 }
