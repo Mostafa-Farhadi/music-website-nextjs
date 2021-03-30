@@ -3,17 +3,18 @@
 .player-section {
     grid-column: 9 / 13;
     grid-row: 3 / 9;
+    box-shadow: -5px -5px 5px #ffffff73, 7px 7px 5px rgba(94, 104, 121, 0.288);
+    border-radius: 10px;
     @include Animations(playerAnm, 1.5s);
     @include Loader;
     
     .music {
-        width: 95%;
+        width: 100%;
         height: 100%;
         margin-top: 18px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        box-shadow: -5px -5px 5px #ffffff73, 7px 7px 5px rgba(94, 104, 121, 0.288);
         border-radius: 10px;
         img {
             width: 180px;
