@@ -30,6 +30,6 @@ export const choseArtist = (artistId) => {
             const errorMessage = error.message
             dispatch(fetchArtistFailure(errorMessage))
         });
-        }, 700);
+        }, 500);
     }
 }

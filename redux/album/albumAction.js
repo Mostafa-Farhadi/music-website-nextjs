@@ -30,7 +30,7 @@ export const choseAlbum = (artistId, AlbumId) => {
             const errorMessage = error.message
             dispatch(fetchAlbumFailure(errorMessage))
         });
-        }, 700);
+        }, 500);
     }
 }
 

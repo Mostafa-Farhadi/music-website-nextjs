@@ -15,6 +15,6 @@ export const choseMusic = (music) => {
         dispatch(musicRequest())
         setTimeout(() => {
             dispatch(musicSuccess(music))
-        }, 700);
+        }, 500);
     }
 }
