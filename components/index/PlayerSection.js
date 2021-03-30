@@ -1,19 +1,26 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { connect } from "react-redux";
 
 const PlayerSection = (props) => {
     const { Music } = props
     const audioEl = useRef(null)
     const [isPauseActive, setIsPauseActive] = useState(false)
-    const [isPlayeActive, setIsPlayeActive] = useState(false)
+    const [isPlayeActive, setIsPlayeActive] = useState(true)
+
+    useEffect(() => {
+        setIsPauseActive(true)
+        setIsPlayeActive(false)
+    }, [Music])
 
     const playHandler = () => {
         audioEl.current.play();
-        setIsPauseActive(!isPauseActive);
+        setIsPauseActive(false);
+        setIsPlayeActive(true);
     }
     const pauseHandler = () => {
         audioEl.current.pause();
-        setIsPlayeActive(!isPlayeActive);
+        setIsPauseActive(true);
+        setIsPlayeActive(false);
     }
 
     return ( 
@@ -27,13 +34,13 @@ const PlayerSection = (props) => {
                     </div>
                 ) : (
                     <div className="music" >
-                        <img src={`img/cover/${Music.music.picture}.jpg`} alt="artist image" 
-                            style={{borderColor: `rgb(${Math.random() * 250},${Math.random() * 250},${Math.random() * 250})`}} />
-                        <h3>{Music.music.name}</h3>
+                        <img src={`img/cover/${Music.music.picture}.jpg`} alt="artist image"
+                            style={{backgroundColor: `rgb(${Math.random() * 250},${Math.random() * 250},${Math.random() * 250})`}} />
+                        <h3 className="song-name">{Music.music.name}</h3>
                         <div className="play-box" >
                             <audio src={`music/${Music.music.picture}.mp3`} ref={audioEl}> </audio>
-                            <button className={`button ${isPauseActive ? "play" : "playActive"}`} onClick={playHandler} ></button>
-                            <button className={`button ${isPlayeActive ? "pause" : "pauseActive"}`} onClick={pauseHandler} ></button>
+                            <button className={`button ${isPlayeActive ? "playActive" : "play"}`} onClick={playHandler} ></button>
+                            <button className={`button ${isPauseActive ? "pauseActive" : "pause"}`} onClick={pauseHandler} ></button>
                         </div>
                     </div>
                 )
