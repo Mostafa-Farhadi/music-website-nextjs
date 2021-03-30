@@ -35,7 +35,15 @@ const PlayerSection = (props) => {
                 ) : (
                     <div className="music" >
                         <img src={`img/cover/${Music.music.picture}.jpg`} alt="artist image"
-                            style={{backgroundColor: `rgb(${Math.random() * 250},${Math.random() * 250},${Math.random() * 250})`}} />
+                            style={{backgroundImage: `linear-gradient(
+                                45deg,
+                                rgb(${Math.random() * 250},${Math.random() * 250},${Math.random() * 250}) 0%,
+                                rgb(${Math.random() * 250},${Math.random() * 250},${Math.random() * 250}) 33.33%,
+                                rgb(${Math.random() * 250},${Math.random() * 250},${Math.random() * 250}) 66.66%,
+                                rgb(${Math.random() * 250},${Math.random() * 250},${Math.random() * 250}) 100%
+                            )`}}
+
+                            />
                         <h3 className="song-name">{Music.music.name}</h3>
                         <div className="play-box" >
                             <audio src={`music/${Music.music.picture}.mp3`} ref={audioEl}> </audio>
