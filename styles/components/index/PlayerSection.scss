@@ -7,6 +7,8 @@
     border-radius: 10px;
     @include Animations(playerAnm, 1.5s);
     @include Loader;
+    overflow-y: auto;
+    @include scroll;
     
     .music {
         width: 100%;
@@ -18,14 +20,13 @@
         border-radius: 10px;
         img {
             width: 180px;
-            margin-top: 25px;
             border-radius: 50%;
             box-shadow: -5px -5px 5px #ffffff73, 7px 7px 5px rgba(94, 104, 121, 0.288);
             padding: 10px;
         }
 
         .song-name {
-            margin-top: 50px;
+            margin-top: 30px;
             color: #a52a2a;
             box-shadow: inset -4px -4px 7px #ffffff73, inset 4px 4px 7px rgba(94, 104, 121, 0.288);
             padding: 12px;
@@ -36,6 +37,7 @@
             display: flex;
             width: 220px;
             justify-content: space-between;
+            margin-top: 30px;
         }
 
         .button {
@@ -48,7 +50,6 @@
             cursor: pointer;
             border-radius: 10px;
             border: none;
-            margin-top: 50px;
         }
 
         .play {
