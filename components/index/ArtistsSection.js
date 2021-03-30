@@ -12,8 +12,8 @@ const ArtistsSection = (props) => {
 
     return ( 
         <section className="artists-section">
-            <button className="leftScroll" onClick={() => scrollHandler(-150)}></button>
-            <button className="rightScroll"  onClick={() => scrollHandler(150)}></button>
+            <button className="leftScroll" onClick={() => scrollHandler(-200)}></button>
+            <button className="rightScroll"  onClick={() => scrollHandler(200)}></button>
             <div className="artistList" ref={list}>
                 <div className="artist one" title="Billie Eilish" onClick={() => choseArtist(0)} ></div>
                 <div className="artist two" title="Dua Lipa" onClick={() => choseArtist(1)} ></div>
