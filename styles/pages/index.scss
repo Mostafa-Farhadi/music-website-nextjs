@@ -1,13 +1,9 @@
 #home {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-auto-rows: minmax(80px, auto);
-    grid-gap: 10px;
-    overflow: hidden;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     @import '../components/index/ArtistsSection.scss';
     @import '../components/index/AlbumsSection.scss';
     @import '../components/index/MusicsSection.scss';
     @import '../components/index/PlayerSection.scss';
-
 }
