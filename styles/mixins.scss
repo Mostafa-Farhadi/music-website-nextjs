@@ -1,10 +1,3 @@
-@mixin artistsHover($startCol, $endCol) {
-    grid-column-start: $startCol;
-    grid-column-end: $endCol;
-    background-color: red;
-    z-index: 1;
-}
-
 @mixin Animations($name, $delay) {
     animation-name: $name;
     animation-duration: 2s;
@@ -19,7 +12,7 @@
         100% {top: 0;}
     }
     @keyframes artistAnm {
-        0% {top: -200px;}
+        0% {top: -300px;}
         100% {top: 0;}
     }
     @keyframes albumAnm {
@@ -27,8 +20,8 @@
         100% {left: 0;}
     }
     @keyframes musicAnm {
-        0% {bottom: -510px;}
-        100% {bottom: 0;}
+        0% {top: -800px;}
+        100% {top: 0;}
     }
     @keyframes playerAnm {
         0% {right: -510px;}
@@ -44,7 +37,6 @@
         text-align: center;
         font-size: 10px;
     }
-
     .Loader > div {
         background-color: rgb(255, 0, 191);
         height: 100%;
@@ -54,15 +46,12 @@
         margin: 3px;
         animation: lines 1.2s infinite ease-in-out;
     }
-
-    .Loader .rect2 {
+    .Loader .line2 {
         animation-delay: -1.1s;
     }
-
-    .Loader .rect3 {
+    .Loader .line3 {
         animation-delay: -1.0s;
     }
-
     @keyframes lines {
         0%, 40%, 100% { 
             transform: scaleY(0.4);
@@ -75,7 +64,6 @@
 @mixin list {
     ul {
         border-radius: 10px;
-        height: 100%;
         list-style-type: none;
         padding: 0 10px 0 10px;
         li {
@@ -98,24 +86,17 @@
 }
 
 @mixin scroll {
-    /* width */
     &::-webkit-scrollbar {
         width: 10px;
     }
-
-    /* Track */
     &::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey; 
     border-radius: 10px;
     }
-
-    /* Handle */
     &::-webkit-scrollbar-thumb {
     background: #aeb9c9; 
     border-radius: 5px;
     }
-
-    /* Handle on hover */
     &::-webkit-scrollbar-thumb:hover {
     background: #8b9db8; 
     }
