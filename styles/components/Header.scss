@@ -1,33 +1,28 @@
 @import "../mixins.scss";
 
 #header {
-    grid-column: 1 / 13;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
     @include Animations(headerAnm, 0s);
-    
     .logo {
-        grid-column: 1 / 2;
         width: 35px;
-        justify-self: center;
+        margin-left: 10px;
         align-self: center;
         cursor: pointer;
         padding: 5px;
         border-radius: 10px;
         box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
     }
-
     .search-box {
-        box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
-        grid-column: 4 / 10;
         display: flex;
         height: 45px;
-        margin: 10px 0;
+        min-width: 650px;
+        margin: 10px auto;
         border-radius: 10px;
+        box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
     }
-
-    .search{
+    .search-logo{
         width: 20px;
         align-self: center;
         cursor: pointer;
@@ -36,12 +31,10 @@
         border-bottom-left-radius: 10px;
         border-top-left-radius: 10px;
     }
-
-    input {
+    .search {
         background-color: inherit;
         height: 100%;
         width: 100%;
-        align-self: center;
         border-radius: 0 8px 8px 0;
         border: none;
         color: #000000;
