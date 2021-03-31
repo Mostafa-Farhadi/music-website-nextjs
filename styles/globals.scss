@@ -6,17 +6,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #dde1e7;
 }
-
-@media screen and (min-width: 768px) {
-    #wrapper {
-        display: flex;
-        flex-direction: column;
-    }
-    @import './components/Header.scss';
-    #content {
-        min-width: 100%;
-    }
-    @import './pages/index.scss';
-    @import './components/Footer.scss';
-    @include keyframes;
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
 }
+@import './components/Header.scss';
+#content {
+    min-width: 100%;
+}
+@import './pages/index.scss';
+@import './components/Footer.scss';
+@include keyframes;
