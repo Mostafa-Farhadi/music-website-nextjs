@@ -27,13 +27,18 @@
         0% {right: -510px;}
         100% {right: 0;}
     }
+    @keyframes musicTabletAnm {
+        0% {right: -510px;}
+        100% {right: 0;}
+    }
 }
 
-@mixin Loader {
+
+@mixin Loader($marginTop, $height) {
     .Loader {
-        margin: 100px auto;
+        margin: $marginTop auto;
         width: 200px;
-        height: 80px;
+        height: $height;
         text-align: center;
         font-size: 10px;
     }
@@ -99,5 +104,11 @@
     }
     &::-webkit-scrollbar-thumb:hover {
     background: #8b9db8; 
+    }
+}
+
+@mixin MediaQurey($arg) {
+    @media screen and (max-width: $arg) {
+        @content;
     }
 }
