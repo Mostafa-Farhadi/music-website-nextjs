@@ -8,20 +8,15 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-
     #wrapper {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-auto-rows: minmax(50px, auto);
+        display: flex;
+        flex-direction: column;
     }
-    
-    #content {
-        grid-column: 1 / 13;
-        grid-row: 2 / 3;
-    }
-    
     @import './components/Header.scss';
+    #content {
+        min-width: 100%;
+    }
     @import './pages/index.scss';
+    @import './components/Footer.scss';
     @include keyframes;
-
 }
