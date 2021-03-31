@@ -11,7 +11,7 @@ const ArtistsSection = (props) => {
     }
 
     return ( 
-        <section className="artists-section">
+        <section id="artists-section">
             <button className="leftScroll" onClick={() => scrollHandler(-200)}></button>
             <button className="rightScroll"  onClick={() => scrollHandler(200)}></button>
             <div className="artistList" ref={list}>
