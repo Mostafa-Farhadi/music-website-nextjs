@@ -1,11 +1,11 @@
 @import "../../mixins.scss";
 
-.albums-section {
-    grid-column: 1 / 5;
-    grid-row: 3 / 9;
+#albums-section {
+    min-width: 32%;
+    height: 500px;
     box-shadow: -5px -5px 5px #ffffff73, 7px 7px 5px rgba(94, 104, 121, 0.288);
     border-radius: 10px;
-    @include Animations(albumAnm, 1.5s);
+    @include Animations(albumAnm, 2.5s);
     @include list;
     @include Loader;
     h2 {

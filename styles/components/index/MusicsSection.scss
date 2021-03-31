@@ -1,11 +1,11 @@
 @import "../../mixins.scss";
 
-.musics-section {
-    grid-column: 5 / 9;
-    grid-row: 3 / 9;
+#musics-section {
+    min-width: 32%;
+    height: 500px;
     box-shadow: -5px -5px 5px #ffffff73, 7px 7px 5px rgba(94, 104, 121, 0.288);
     border-radius: 10px;
-    @include Animations(musicAnm, 1.5s);
+    @include Animations(musicAnm, 2.5s);
     @include list;
     @include Loader;
     h2 {
