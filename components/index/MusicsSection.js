@@ -5,13 +5,13 @@ const MusicsSection = (props) => {
     const { Album, choseMusic } = props
 
     return ( 
-        <section className="musics-section">
+        <section id="musics-section">
             {
                 Album.loading ? (
                     <div className="Loader">
-                        <div className="rect1"></div>
-                        <div className="rect2"></div>
-                        <div className="rect3"></div>
+                        <div className="line1"></div>
+                        <div className="line2"></div>
+                        <div className="line3"></div>
                     </div>
                 ) : (
                     <ul>

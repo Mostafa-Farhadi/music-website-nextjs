@@ -4,13 +4,13 @@ import {choseAlbum} from '../../redux/album/albumAction'
 const AlbumsSection = (props) => {
     const { Artist, choseAlbum } = props
     return ( 
-        <section className="albums-section">
+        <section id="albums-section">
             {
                 Artist.loading ? (
                     <div className="Loader">
-                        <div className="rect1"></div>
-                        <div className="rect2"></div>
-                        <div className="rect3"></div>
+                        <div className="line1"></div>
+                        <div className="line2"></div>
+                        <div className="line3"></div>
                     </div>
                 ) : (
                     <ul>
