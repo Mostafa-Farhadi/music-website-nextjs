@@ -7,10 +7,13 @@
     border-radius: 10px;
     @include Animations(albumAnm, 2.5s);
     @include list;
-    @include Loader;
+    @include Loader(180px, 80px);
     h2 {
         color: #a52a2a;
     }
     overflow-y: auto;
     @include scroll;
+    @include MediaQurey(900px) {
+        min-width: 47%;
+    };
 }

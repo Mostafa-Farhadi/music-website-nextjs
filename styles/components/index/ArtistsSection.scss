@@ -19,6 +19,9 @@
         &:active {
             box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
         }
+        @include MediaQurey(900px) {
+            top: 40px;
+        }
     }
     .leftScroll {
         left: 5px;
@@ -53,6 +56,10 @@
         &:hover {
             background: linear-gradient( 30deg, #fc87da 0%, #cb94ef 33.33%, #41e0e7 66.66%, #28f6c2 100%)
         }
+        @include MediaQurey (900px) {
+            height: 120px;
+            min-width: 120px;
+        };
         &::after {
             content: "";
             position: absolute;
