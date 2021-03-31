@@ -18,6 +18,7 @@
         background-color: #dde1e7;
         border-radius: 0;
         @include Loader(0px, 55px);
+        animation: none
     };
     .music {
         margin-top: 18px;
