@@ -28,9 +28,9 @@ const PlayerSection = (props) => {
             {
                 Music.loading ? (
                     <div className="Loader">
-                        <div className="rect1"></div>
-                        <div className="rect2"></div>
-                        <div className="rect3"></div>
+                        <div className="line1"></div>
+                        <div className="line2"></div>
+                        <div className="line3"></div>
                     </div>
                 ) : (
                     <div className="music" >
@@ -44,9 +44,9 @@ const PlayerSection = (props) => {
                             )`}}
 
                             />
-                        <h3 className="song-name">{Music.music.name}</h3>
+                        <h3>{Music.music.name}</h3>
                         <div className="play-box" >
-                            <audio src={`music/${Music.music.picture}.mp3`} ref={audioEl}> </audio>
+                            <audio src={`music/${Music.music.picture}.mp3`} ref={audioEl} loop> </audio>
                             <button className={`button ${isPlayeActive ? "playActive" : "play"}`} onClick={playHandler} ></button>
                             <button className={`button ${isPauseActive ? "pauseActive" : "pause"}`} onClick={pauseHandler} ></button>
                         </div>
