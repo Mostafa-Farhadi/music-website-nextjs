@@ -55,6 +55,10 @@
                 letter-spacing: 2px;
                 text-align: center;
             };
+            @include MediaQurey (600px) {
+                margin-top: auto;
+                width: 30vw;
+            };
         }
         .play-box {
             display: flex;
@@ -64,6 +68,9 @@
             @include MediaQurey (900px) {
                 margin: 0 20px 0 0;
                 width: 150px;
+            };
+            @include MediaQurey (600px) {
+                width: 130px;
             };
         }
         .button {

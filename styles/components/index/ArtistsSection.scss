@@ -22,6 +22,11 @@
         @include MediaQurey(900px) {
             top: 40px;
         }
+        @include MediaQurey(600px) {
+            width: 30px;
+            height: 30px;
+            top: 30px;
+        }
     }
     .leftScroll {
         left: 5px;
@@ -41,6 +46,9 @@
             height: 0px;
         }
         scroll-behavior: smooth;
+        @include MediaQurey(600px) {
+            margin: 0 40px;
+        }
     }
     .artist {
         display: flex;
@@ -60,6 +68,11 @@
             height: 120px;
             min-width: 120px;
         };
+        @include MediaQurey(600px) {
+            height: 70px;
+            min-width: 70px;
+            margin: 0 5px 10px 5px;
+        }
         &::after {
             content: "";
             position: absolute;

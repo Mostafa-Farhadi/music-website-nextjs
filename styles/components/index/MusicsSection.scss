@@ -17,4 +17,10 @@
         min-width: 47%;
         @include Animations(musicTabletAnm, 2.5s);
     };
+    @include MediaQurey(600px) {
+        min-width: 90%;
+        height: 250px;
+        margin-top: 10px;
+        @include Loader(80px, 80px);
+    };
 }
