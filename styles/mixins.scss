@@ -107,7 +107,7 @@
     }
 }
 
-@mixin MediaQurey($arg) {
+@mixin MediaQuery($arg) {
     @media screen and (max-width: $arg) {
         @content;
     }

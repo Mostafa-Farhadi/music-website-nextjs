@@ -13,10 +13,10 @@
     }
     overflow-y: auto;
     @include scroll;
-    @include MediaQurey(900px) {
+    @include MediaQuery(900px) {
         min-width: 47%;
     };
-    @include MediaQurey(600px) {
+    @include MediaQuery(600px) {
         min-width: 90%;
         height: 250px;
         @include Loader(80px, 80px);
