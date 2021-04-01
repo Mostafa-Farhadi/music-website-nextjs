@@ -4,46 +4,67 @@
     min-width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    @include MediaQuery(900px) {
+        display: block;
+    }
     @include Animations(headerAnm, 0s);
-    .logo {
-        width: 35px;
-        margin-left: 10px;
-        align-self: center;
-        cursor: pointer;
-        padding: 5px;
-        border-radius: 10px;
-        box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+    ul {
+        display: flex;
+        @include MediaQuery(900px) {
+            justify-content: center;
+            margin: 20px 0;
+        }
+        li {
+            list-style-type: none;
+            min-width: 160px;
+            a {
+                text-decoration: none;
+                justify-content: space-between;
+                padding: 12px 40px;
+                border-radius: 10px;
+                letter-spacing: 2px;
+                box-shadow: 3px 3px 5px #cbced1, -3px -3px 5px #ffffff;
+                &:active {
+                    box-shadow: inset 3px 3px 5px #cbced1, inset -3px -3px 5px #ffffff;
+                    color: #000000;
+                }
+                &:hover {
+                    color: #7e7e7e
+                }
+            }
+        }
     }
     .search-box {
         display: flex;
         height: 45px;
-        min-width: 70vw;
-        margin: 10px auto;
+        min-width: 50vw;
+        margin: 10px 10px;
         border-radius: 10px;
         box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
-    }
-    .search-logo{
-        width: 20px;
-        align-self: center;
-        cursor: pointer;
-        padding: 12px 4px;
-        background-color: #2cd302;
-        border-bottom-left-radius: 10px;
-        border-top-left-radius: 10px;
-    }
-    .search {
-        background-color: inherit;
-        height: 100%;
-        width: 100%;
-        border-radius: 0 8px 8px 0;
-        border: none;
-        color: #000000;
-        outline: none;
-        font-size: 14px;
-        &::placeholder {
+        .search-logo{
+            width: 20px;
+            align-self: center;
+            cursor: pointer;
+            padding: 12px 4px;
+            background-color: #2cd302;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        .search {
+            background-color: inherit;
+            height: 100%;
+            width: 100%;
+            border-radius: 0 8px 8px 0;
+            border: none;
             color: #000000;
+            outline: none;
             font-size: 14px;
-            padding-left: 10px;
+            &::placeholder {
+                color: #000000;
+                font-size: 14px;
+                padding-left: 10px;
+            }
         }
     }
 }
