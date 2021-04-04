@@ -18,7 +18,10 @@ const MusicsSection = (props) => {
                         <h2>{Album.album.name}</h2>
                         {Album.album.musics.map(music => {
                             return (
-                                <li key={music.id} onClick={() => choseMusic(music)} >{music.name}</li>
+                                <li key={music.id} onClick={() => choseMusic(music)} >
+                                    <img src={`img/cover/${music.url}.jpg`} alt="picture"/>
+                                    <p>{music.name}</p>
+                                </li>
                             )
                         })}
                     </ul>

@@ -11,6 +11,16 @@
     h2 {
         color: #a52a2a;
     }
+    li {
+        display: flex;
+    }
+    img {
+        width: 40px;
+        height: 40px;
+        align-self: center;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
     overflow-y: auto;
     @include scroll;
     @include MediaQuery(900px) {
