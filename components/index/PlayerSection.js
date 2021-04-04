@@ -34,7 +34,7 @@ const PlayerSection = (props) => {
                     </div>
                 ) : (
                     <div className="music" >
-                        <img src={`img/cover/${Music.music.picture}.jpg`} alt="artist image"
+                        <img src={`img/cover/${Music.music.url}.jpg`} alt="artist image"
                             style={{backgroundImage: `linear-gradient(
                                 45deg,
                                 rgb(${Math.random() * 250},${Math.random() * 250},${Math.random() * 250}) 0%,
@@ -46,7 +46,7 @@ const PlayerSection = (props) => {
                             />
                         <h3>{Music.music.name}</h3>
                         <div className="play-box" >
-                            <audio src={`music/${Music.music.picture}.mp3`} ref={audioEl} loop> </audio>
+                            <audio src={`music/${Music.music.url}.mp3`} ref={audioEl} loop> </audio>
                             <button className={`button ${isPlayeActive ? "playActive" : "play"}`} onClick={playHandler} ></button>
                             <button className={`button ${isPauseActive ? "pauseActive" : "pause"}`} onClick={pauseHandler} ></button>
                         </div>
