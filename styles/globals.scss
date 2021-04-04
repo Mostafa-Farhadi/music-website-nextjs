@@ -3,18 +3,19 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #dde1e7;
 }
 #wrapper {
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 @import './components/Header.scss';
 #content {
     min-width: 100%;
 }
+@import './pages/index.scss';
 @import './pages/music.scss';
 @import './components/Footer.scss';
 @include keyframes;
