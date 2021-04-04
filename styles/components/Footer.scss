@@ -1,7 +1,26 @@
 #footer {
-    min-width: 100%;
-    margin-top: 10px;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 300px;
+    padding-top: 20px;
+    text-align: center;
+    background-color: #dde1e7;
+    p {
+        font-size: 18px;
+    }
+    img {
+        border-radius: 10px;
+        padding: 5px;
+        &:hover {
+            background-color: #cbd5e4;
+        }
+    }
+    .nextjs {
+        width: 80px;
+    }
+    .logo {
+        width: 40px;
+        margin: 5px;
+    }
+    @include MediaQuery(900px) {
+        padding-bottom: 60px;
+    }
 }
