@@ -5,13 +5,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include MediaQuery(900px) {
+    @include MediaQuery(1024px) {
         display: block;
     }
     @include Animations(headerAnm, 0s);
     ul {
         display: flex;
-        @include MediaQuery(900px) {
+        @include MediaQuery(1024px) {
             justify-content: center;
             margin: 20px 0;
         }

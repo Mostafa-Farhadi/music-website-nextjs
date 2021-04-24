@@ -19,10 +19,10 @@
         &:active {
             box-shadow: inset -3px -3px 7px #ffffff73, inset 3px 3px 5px rgba(94, 104, 121, 0.288);
         }
-        @include MediaQuery(900px) {
+        @include MediaQuery(1024px) {
             top: 40px;
         }
-        @include MediaQuery(600px) {
+        @include MediaQuery(768px) {
             width: 30px;
             height: 30px;
             top: 30px;
@@ -46,7 +46,7 @@
             height: 0px;
         }
         scroll-behavior: smooth;
-        @include MediaQuery(600px) {
+        @include MediaQuery(768px) {
             margin: 0 40px;
         }
     }
@@ -64,11 +64,11 @@
         &:hover {
             background: linear-gradient( 30deg, #fc87da 0%, #cb94ef 33.33%, #41e0e7 66.66%, #28f6c2 100%)
         }
-        @include MediaQuery (900px) {
+        @include MediaQuery (1024px) {
             height: 120px;
             min-width: 120px;
         };
-        @include MediaQuery(600px) {
+        @include MediaQuery(768px) {
             height: 70px;
             min-width: 70px;
             margin: 0 5px 10px 5px;

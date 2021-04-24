@@ -23,11 +23,11 @@
     }
     overflow-y: auto;
     @include scroll;
-    @include MediaQuery(900px) {
+    @include MediaQuery(1024px) {
         min-width: 47%;
         @include Animations(musicTabletAnm, 2.5s);
     };
-    @include MediaQuery(600px) {
+    @include MediaQuery(768px) {
         min-width: 90%;
         height: 250px;
         margin-top: 10px;

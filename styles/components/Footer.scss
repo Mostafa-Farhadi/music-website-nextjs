@@ -20,7 +20,7 @@
         width: 40px;
         margin: 5px;
     }
-    @include MediaQuery(900px) {
+    @include MediaQuery(1024px) {
         padding-bottom: 60px;
     }
 }
