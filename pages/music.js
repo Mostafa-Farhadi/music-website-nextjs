@@ -4,12 +4,8 @@ import AlbumsSection from '../components/index/AlbumsSection'
 import MusicsSection from '../components/index/MusicsSection'
 import PlayerSection from '../components/index/PlayerSection'
 
-import { Provider } from "react-redux";
-import store from '../redux/store';
-
 const Music = () => {
     return (
-        <Provider store={store} >
         <div id="music">
             <Head>
             <title>Music Website | Music</title>
@@ -20,7 +16,6 @@ const Music = () => {
             <MusicsSection />
             <PlayerSection />
         </div>
-        </Provider>
     );
 }
 
