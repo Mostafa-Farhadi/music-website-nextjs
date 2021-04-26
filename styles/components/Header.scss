@@ -80,11 +80,12 @@
             margin: 10px;
             font-size: 18px;
             cursor: pointer;
-            &:hover {
-                color: rgb(189, 182, 182);
-            }
+            color: #bdb6b6;
             span {
-                color: red;
+                color: #000000;
+            }
+            &:hover {
+                font-weight: bold;
             }
         }
     }
