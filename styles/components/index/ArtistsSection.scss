@@ -1,5 +1,3 @@
-@import "../../mixins.scss";
-
 #artists-section {
     min-width: 100%;
     @include Animations(artistAnm, 1s);
