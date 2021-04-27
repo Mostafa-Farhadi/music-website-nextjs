@@ -14,14 +14,15 @@ const Header = (props) => {
     const router = useRouter();
     const searchBox = useRef(null);
     const [enabledSearchBox, setEnabledSearchBox] = useState("false");
+    const searchInput = useRef(null);
 
-        useEffect(() => {
-            if (router.pathname !== "/music") {
-                setEnabledSearchBox("disabled-search-box")
-            } else {
-                setEnabledSearchBox("")
-            }
-        }, [router.pathname]);
+    useEffect(() => {
+        if (router.pathname !== "/music") {
+            setEnabledSearchBox("disabled-search-box")
+        } else {
+            setEnabledSearchBox("")
+        }
+    }, [router.pathname]);
 
     useEffect(() => {
         axios.get("http://localhost:3000/api/musics")
@@ -54,8 +55,14 @@ const Header = (props) => {
         }
     };
 
+    const artistSelection = (artistId) => {
+        choseArtist(artistId);
+        setSuggests([]);
+        searchInput.current.value = "";
+    }
+
     return ( 
-        <header id="header" >
+        <header id="header">
             <ul>
                 <li>
                     <Link href="/">
@@ -77,11 +84,12 @@ const Header = (props) => {
                     className="search" 
                     placeholder="Search now..."
                     onChange={event => suggestHandler(event)}
+                    ref={searchInput}
                 />
             </form>
             <div className="suggestions">
                 {suggests.map((suggest, index) => (
-                        <a key={index} onClick={() => choseArtist(suggest[1])}><span>{enteredText}</span>{suggest[0]}</a>
+                        <a key={index} onClick={() => artistSelection(suggest[1])}><span>{enteredText}</span>{suggest[0]}</a>
                 ))}
             </div>
         </header>
