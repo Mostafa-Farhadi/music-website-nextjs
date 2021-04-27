@@ -71,9 +71,9 @@
     .suggestions {
         background-color: #eee;
         position: absolute;
-        top: 60px;
-        left: 740px;
-        width: 770px;
+        width: 40vw;
+        margin-top: 5px;
+        border-radius: 10px;
         a {
             display: block;
             margin: 10px;
@@ -87,5 +87,9 @@
                 font-weight: bold;
             }
         }
+        @include MediaQuery(1024px) {
+            width: 100vw;
+        }
     }
+    
 }
