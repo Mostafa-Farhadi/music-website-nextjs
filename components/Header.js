@@ -19,6 +19,8 @@ const Header = (props) => {
     useEffect(() => {
         if (router.pathname !== "/music") {
             setEnabledSearchBox("disabled-search-box")
+            setSuggests([]);
+            searchInput.current.value = "";
         } else {
             setEnabledSearchBox("")
         }
