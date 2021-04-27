@@ -77,22 +77,24 @@ const Header = (props) => {
                     </Link>
                 </li>
             </ul>
-            <form className={`search-box ${enabledSearchBox}`} autoComplete="off" ref={searchBox}>
-                <img src="img/icon/search.png" alt="search" className="search-logo"/>
-                <input 
-                    type="search" 
-                    name="search" 
-                    id="search" 
-                    className="search" 
-                    placeholder="Search now..."
-                    onChange={event => suggestHandler(event)}
-                    ref={searchInput}
-                />
-            </form>
-            <div className="suggestions">
-                {suggests.map((suggest, index) => (
-                        <a key={index} onClick={() => artistSelection(suggest[1])}><span>{enteredText}</span>{suggest[0]}</a>
-                ))}
+            <div>
+                <form className={`search-box ${enabledSearchBox}`} autoComplete="off" ref={searchBox}>
+                    <img src="img/icon/search.png" alt="search" className="search-logo"/>
+                    <input 
+                        type="search" 
+                        name="search" 
+                        id="search" 
+                        className="search" 
+                        placeholder="Search now..."
+                        onChange={event => suggestHandler(event)}
+                        ref={searchInput}
+                    />
+                </form>
+                <div className="suggestions">
+                    {suggests.map((suggest, index) => (
+                            <a key={index} onClick={() => artistSelection(suggest[1])}><span>{enteredText}</span>{suggest[0]}</a>
+                    ))}
+                </div>
             </div>
         </header>
     );
