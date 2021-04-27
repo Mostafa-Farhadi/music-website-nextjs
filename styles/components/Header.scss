@@ -1,9 +1,10 @@
 #header {
     min-width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     z-index: 1;
+    padding: 10px 0;
     @include MediaQuery(1024px) {
         display: block;
     }
@@ -36,7 +37,7 @@
     .search-box {
         display: flex;
         height: 45px;
-        min-width: 50vw;
+        min-width: 40vw;
         border-radius: 10px;
         box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
         .search-logo{
