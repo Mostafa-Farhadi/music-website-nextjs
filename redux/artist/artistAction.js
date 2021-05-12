@@ -1,5 +1,3 @@
-import axios from 'axios';
-
 import { FETCH_ARTIST_REQUEST } from './artistTypes';
 import { FETCH_ARTIST_SUCCESS } from './artistTypes';
 import { FETCH_ARTIST_FAILURE } from './artistTypes';
@@ -18,18 +16,17 @@ const fetchArtistFailure = error => ({
     error: error
 })
 
-export const choseArtist = (artistId) => {
-    return (dispatch) => {
-        dispatch(fetchArtistRequest())
-        setTimeout(() => {
-            axios.get("http://localhost:3000/api/musics")
-        .then((response) => {
-            const artist = response.data
-                dispatch(fetchArtistSuccess(artist[artistId]))
-        }).catch((error) => {
+export const choseArtist = (artistId) => (dispatch) => {
+    dispatch(fetchArtistRequest());
+    setTimeout( async () => {
+        try {
+            const response = await fetch("http://localhost:3000/api/musics");
+            const artist = await response.json();
+            dispatch(fetchArtistSuccess(artist[artistId]))
+        }
+        catch(error) {
             const errorMessage = error.message
             dispatch(fetchArtistFailure(errorMessage))
-        });
-        }, 500);
-    }
-}
+        };
+    }, 500)
+};
